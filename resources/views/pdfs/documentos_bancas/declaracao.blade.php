@@ -69,7 +69,7 @@
         {!!$configs->declaracao!!}
     </p> <br><br>
 
-    <table width="16cm" style="border='0'; margin-left:4cm; align-items: center; justify-content: center;">
+    <table width="16cm" style="border='0'; margin-left:1cm; align-items: center; justify-content: center;">
         @foreach($professores as $componente)    
         <tr style="border='0'">
             <td><b>@if($componente->n_usp != null){{$pessoa::dump($componente->n_usp)['nompes'] ?? ' ' }} @elseif($componente->prof_externo_id != null) {{$componente->prof_externo->nome}} @endif</b> </td>
